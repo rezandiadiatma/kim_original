@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'dashboard_title' => 'Welcome to Dashboard',
+    'dashboard_title' => 'Dashboard',
 	'welcome_text' => 'Welcome to Dashboard',
 	'analytic' => 'View Web Analytic',
 	'welcome' => 'Welcome',

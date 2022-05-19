@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'POPOJI'),
+    'name' => env('APP_NAME', 'KIM'),
 	
 	'version' => env('APP_VERSION', '3.0.0'),
 

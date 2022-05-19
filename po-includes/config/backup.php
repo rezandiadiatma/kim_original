@@ -90,7 +90,7 @@ return [
             /*
              * The filename prefix used for the backup zip file.
              */
-            'filename_prefix' => 'popoji-',
+            'filename_prefix' => 'kim-',
 
             /*
              * The disk names on which the backups will be stored.
@@ -161,7 +161,7 @@ return [
      */
     'monitor_backups' => [
         [
-            'name' => env('APP_NAME', 'popoji-backup'),
+            'name' => env('APP_NAME', 'kim-backup'),
             'disks' => ['local'],
             'health_checks' => [
                 \Spatie\Backup\Tasks\Monitor\HealthChecks\MaximumAgeInDays::class => 1,

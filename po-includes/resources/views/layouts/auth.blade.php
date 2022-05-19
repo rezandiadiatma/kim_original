@@ -21,7 +21,7 @@
 <body>
 	<header class="navbar navbar-header navbar-header-fixed">
 		<div class="navbar-brand">
-			<a href="{{ url('/') }}" class="df-logo pt-2">POPOJI</a>
+			<a href="{{ url('/') }}" class="df-logo pt-2">KIM</a>
 		</div>
 		
 		<div class="navbar-right">

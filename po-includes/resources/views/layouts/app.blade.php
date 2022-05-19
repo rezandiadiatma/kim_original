@@ -34,7 +34,7 @@
 <body>
 	<aside class="aside aside-fixed">
         <div class="aside-header">
-            <a href="{{ url('/dashboard') }}" class="aside-logo pt-2">POPOJI</a>
+            <a href="{{ url('/dashboard') }}" class="aside-logo pt-2">KIM</a>
             <a href="#" class="aside-menu-link pt-1">
                 <i data-feather="menu"></i>
                 <i data-feather="x"></i>
