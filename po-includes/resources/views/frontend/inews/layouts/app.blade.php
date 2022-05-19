@@ -158,10 +158,10 @@
 					<h3 class="wiget-title">Sitemap</h3>
 					<ul class="menu-services">
 						<li><a href="{{ url('/') }}">Home</a></li>
-						<li><a href="{{ url('pages/about-us') }}">About Us</a></li>
+						<li><a href="{{ url('pages/about-us') }}">Tentang Kami</a></li>
 						<li><a href="{{ url('pages/services') }}">Services</a></li>
 						<li><a href="{{ url('album/all') }}">Gallery</a></li>
-						<li><a href="{{ url('contact') }}">Contact</a></li>
+						<li><a href="{{ url('contact') }}">Kontak Kami</a></li>
 					</ul>
 				</div>
 
