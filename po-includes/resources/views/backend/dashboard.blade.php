@@ -11,22 +11,22 @@
 			</nav>
 			<h4 class="mg-b-0 tx-spacing--1">{{ __('dashboard.welcome_text') }}</h4>
 		</div>
-		
+
 		<div class="d-none d-md-block">
 			<a href="{{ url('dashboard/analytics') }}" class="btn btn-sm pd-x-15 btn-white btn-uppercase"><i data-feather="bar-chart-2" class="wd-10 mg-r-5"></i> {{ __('dashboard.analytic') }}</a>
 		</div>
 	</div>
-	
+
 	<div class="card card-body ht-lg-100 mb-3">
 		<div class="media">
 			<span class="tx-color-04"><i data-feather="home" class="wd-60 ht-60"></i></span>
 			<div class="media-body mg-l-20">
-				<h6 class="mg-b-10 text-uppercase">{{ __('dashboard.welcome') }}</h6>
-				<p class="tx-color-03 mg-b-0">{{ __('dashboard.welcome_to') }} {{ config('app.name') }}. {{ __('dashboard.please_click') }}</p>
+				<h6 class="mg-b-10 text-uppercase">{{ __('Hello, Selamat Datang') }}</h6>
+				<p class="tx-color-03 mg-b-0">{{ __('Selamat datang di administrator') }} {{ config('app.name') }}. {{ __('dashboard.please_click') }}</p>
 			</div>
 		</div>
 	</div>
-	
+
 	@if($commentunread > 0)
 	<div class="card card-body ht-lg-100 mb-3">
 		<div class="media">
@@ -38,7 +38,7 @@
 		</div>
 	</div>
 	@endif
-	
+
 	@if($contactunread > 0)
 	<div class="card card-body ht-lg-100 mb-3">
 		<div class="media">
@@ -50,7 +50,7 @@
 		</div>
 	</div>
 	@endif
-	
+
 	<div class="row row-xs">
 		<div class="col-md-6">
 			<div class="row">
@@ -106,7 +106,7 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="col-sm-6 col-lg-6 mb-3">
 					<div class="card card-body">
 						<div class="media">
@@ -161,7 +161,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="col-md-6">
 			<div class="card">
 				<div class="card-header">
@@ -189,9 +189,9 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<hr />
-	
+
 	<div class="row">
 		<div class="col-md-12 text-center">
 			<p class="tx-color-03 tx-13">{{ getSetting('web_name') }} By {{ getSetting('web_author') }}.<br />&copy; Copyright 2013 - {{ date('Y') }}. Build with Care your Engine Management System.</p>
@@ -209,7 +209,7 @@
 <script type="text/javascript">
 	$(function() {
 		'use strict'
-		
+
 		const scroll1 = new PerfectScrollbar('#popular-post', {
 			suppressScrollX: true
 		});
