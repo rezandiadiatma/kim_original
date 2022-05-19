@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'info@popojicms.org'),
-        'name' => env('MAIL_FROM_NAME', 'POPOJI'),
+        'address' => env('MAIL_FROM_ADDRESS', 'kim@pemkotsmg.com'),
+        'name' => env('MAIL_FROM_NAME', 'KIM'),
     ],
 
     /*
