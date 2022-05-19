@@ -21,7 +21,7 @@
 		<div class="media">
 			<span class="tx-color-04"><i data-feather="home" class="wd-60 ht-60"></i></span>
 			<div class="media-body mg-l-20">
-				<h6 class="mg-b-10 text-uppercase">{{ __('Hello, Selamat Datang') }}</h6>
+				<h6 class="mg-b-10 text-uppercase">{{ __('Hallo, Selamat Datang') }}</h6>
 				<p class="tx-color-03 mg-b-0">{{ __('Selamat datang di administrator') }} {{ config('app.name') }}. {{ __('dashboard.please_click') }}</p>
 			</div>
 		</div>
