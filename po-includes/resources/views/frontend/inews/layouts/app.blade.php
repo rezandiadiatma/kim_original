@@ -216,9 +216,9 @@
 
 				<div class="col-xs-12 col-sm-7 col-md-7">
 					<ul class="footer-nav">
-						<li><a href="{{ url('pages/about-us') }}">About Us</a></li>
+						<li><a href="{{ url('pages/about-us') }}">Tentang Kami</a></li>
 						<li><a href="{{ url('pages/services') }}">Services</a></li>
-						<li><a href="{{ url('contact') }}">Contact</a></li>
+						<li><a href="{{ url('contact') }}">Kontak Kami</a></li>
 					</ul>
 				</div>
 			</div>

@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
 	<div class="newstricker_inner">
-		<div class="trending"><strong>Trending</strong> Now</div>
+		<div class="trending"><strong>Postingan</strong> Terkini</div>
 		<div id="NewsTicker" class="owl-carousel owl-theme">
 			@foreach(trendingPost(5) as $trendingPost)
 			<div class="item">
@@ -89,7 +89,7 @@
 			<div class="theiaStickySidebar">
 				<div class="post-inner">
 					<div class="post-head">
-						<h2 class="title"><strong>Popular</strong> Posts</h2>
+						<h2 class="title"><strong>Postingan</strong> Populer</h2>
 					</div>
 
 					<div class="post-body">
@@ -156,7 +156,7 @@
 
 				<div class="post-inner">
 					<div class="post-head">
-						<h2 class="title"><strong>Latest</strong> Posts</h2>
+						<h2 class="title"><strong>Postingan</strong> Terbaru</h2>
 					</div>
 
 					<div class="post-body">

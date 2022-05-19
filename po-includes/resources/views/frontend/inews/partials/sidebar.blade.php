@@ -5,8 +5,8 @@
 	
 	<div class="tabs-wrapper">
 		<ul class="nav nav-tabs" role="tablist">
-			<li role="presentation" class="active"><a href="#latest" aria-controls="latest" role="tab" data-toggle="tab">Latest Posts</a></li>
-			<li role="presentation"><a href="#popular" aria-controls="popular" role="tab" data-toggle="tab">Popular Posts</a></li>
+			<li role="presentation" class="active"><a href="#latest" aria-controls="latest" role="tab" data-toggle="tab">Postingan Baru</a></li>
+			<li role="presentation"><a href="#popular" aria-controls="popular" role="tab" data-toggle="tab">Postingan Populer</a></li>
 		</ul>
 		
 		<div class="tab-content">
