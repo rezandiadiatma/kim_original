@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="@yield('title')" />
     <meta name="generator" content="{{ config('app.version') }}" />
-    <meta name="author" content="POPOJI" />
+    <meta name="author" content="KIM" />
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 	
 	<title>@yield('title') - {{ config('app.name') }}</title>
@@ -35,7 +35,7 @@
 	
 	<footer class="footer">
 		<div>
-			<span>&copy; 2013-<?=date('Y');?> Popoji V.{{ config('app.version') }}</span>
+			<span>&copy; 2013-<?=date('Y');?> KIM V.{{ config('app.version') }}</span>
 			<span>{{ __('auth.created') }} <a href="http://www.themepixels.me" rel="nofollow">ThemePixels</a></span>
 		</div>
 		<div>

@@ -81,8 +81,8 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">POPOJI</div>
-				<p>Your Favorite Engine Management System</p>
+                <div class="title m-b-md">KIM</div>
+				<p>Kelompok Informasi Masyarakat</p>
             </div>
         </div>
     </body>
