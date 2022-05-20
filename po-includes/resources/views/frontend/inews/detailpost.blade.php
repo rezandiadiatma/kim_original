@@ -120,7 +120,7 @@
 					
 					@if(getSetting('comment') == 'Y')
 						<div class="comments-container">
-							<h3>Comments ({{ $post->comments_count }})</h3>
+							<h3>Komentar ({{ $post->comments_count }})</h3>
 							@if($post->comments_count > 0)
 								<ul class="comments-list">
 									@each(getTheme('partials.comment'), getComments($post->id, 5), 'comment', getTheme('partials.comment'))
@@ -134,7 +134,7 @@
 									</div>
 								</div>
 							@else
-								<p class="text-center">There are no comments yet</p>
+								<p class="text-center">Belum ada komentar</p>
 							@endif
 						</div>
 					@endif
@@ -143,7 +143,7 @@
 						{{ csrf_field() }}
 						<input type="hidden" name="parent" id="parent" value="{{ old('parent') == null ? 0 : old('parent') }}" />
 						<input type="hidden" name="post_id" id="post_id" value="{{ $post->id }}" />
-						<h3><strong>Leave</strong> a Comment</h3>
+						<h3><strong>Berikan</strong> Komentar</h3>
 						<div class="row">
 							<div class="col-sm-12">
 								@if (Session::has('flash_message'))
@@ -164,7 +164,7 @@
 						<div class="row">
 							<div class="col-sm-6">
 								<div class="form-group">
-									<label for="name">Name *</label>
+									<label for="name">Nama *</label>
 									<input type="text" class="form-control" id="name" name="name" value="{{ old('name') }}" placeholder="Your name *">
 								</div>
 							</div>
@@ -176,13 +176,13 @@
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="content">Comment *</label>
+							<label for="content">Komentar *</label>
 							<textarea class="form-control" id="content" name="content" placeholder="Your Comment *" rows="5">{{ old('content') }}</textarea>
 						</div>
 						<div class="form-group">
 							{!! NoCaptcha::display() !!}
 						</div>
-						<button type="submit" class="btn btn-news">Submit</button>
+						<button type="submit" class="btn btn-news">Kirim</button>
 					</form>
 				</div>
 			</div>

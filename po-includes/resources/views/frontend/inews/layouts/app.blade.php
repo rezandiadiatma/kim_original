@@ -157,11 +157,11 @@
 				<div class="col-sm-2 footer-box">
 					<h3 class="wiget-title">Sitemap</h3>
 					<ul class="menu-services">
-						<li><a href="{{ url('/') }}">Home</a></li>
+						<li><a href="{{ url('/') }}">Beranda</a></li>
 						<li><a href="{{ url('pages/about-us') }}">Tentang Kami</a></li>
-						<li><a href="{{ url('pages/services') }}">Services</a></li>
-						<li><a href="{{ url('album/all') }}">Gallery</a></li>
-						<li><a href="{{ url('contact') }}">Kontak Kami</a></li>
+						<li><a href="{{ url('pages/contact-us') }}">Kontak Kami</a></li>
+						<li><a href="{{ url('pages/hoax-buster') }}">Hoax Buster</a></li>
+						<li><a href="{{ url('pages/lapor-hendi') }}">Lapor Hendi</a></li>
 					</ul>
 				</div>
 
@@ -217,8 +217,9 @@
 				<div class="col-xs-12 col-sm-7 col-md-7">
 					<ul class="footer-nav">
 						<li><a href="{{ url('pages/about-us') }}">Tentang Kami</a></li>
-						<li><a href="{{ url('pages/services') }}">Services</a></li>
-						<li><a href="{{ url('contact') }}">Kontak Kami</a></li>
+						<li><a href="{{ url('pages/sambutan') }}">Sambutan</a></li>
+						<li><a href="{{ url('pages/visi-dan-misi') }}">Visi dan Misi</a></li>
+						<li><a href="{{ url('pages/kepengurusan') }}">Kepengurusan</a></li>
 					</ul>
 				</div>
 			</div>

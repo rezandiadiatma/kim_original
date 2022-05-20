@@ -10,7 +10,7 @@
 					<div class="contact_form_inner">
 						<div class="panel_inner">
 							<div class="panel_header">
-								<h4><strong>We'd Love to Here</strong> Form you, Get in Touch With in Us?</h4>
+								<h4><strong>Kami senang mendengar</strong> pendapat anda, beri kami masukan?</h4>
 							</div>
 							<div class="panel_body">
 								@if (Session::has('flash_message'))
@@ -32,7 +32,7 @@
 									<div class="row">
 										<div class="col-sm-6">
 											<div class="form-group">
-												<label for="name">Full Name *</label>
+												<label for="name">Nama Lengkap *</label>
 												<input type="text" class="form-control" id="name" name="name" value="{{ old('name') }}" placeholder="Your name *">
 											</div>
 										</div>
@@ -43,20 +43,20 @@
 											</div>
 										</div>
 										<div class="col-sm-12">
-											<label for="subject">Subject *</label>
+											<label for="subject">Subjek *</label>
 											<div class="form-group">
 												<input type="text" class="form-control" id="subject" name="subject" value="{{ old('subject') }}" placeholder="Write subject here *">
 											</div>
 										</div>
 									</div>
 									<div class="form-group">
-										<label for="message">Message *</label>
+										<label for="message">Pesan *</label>
 										<textarea class="form-control" id="message" name="message" placeholder="Your Comment *" rows="5">{{ old('message') }}</textarea>
 									</div>
 									<div class="form-group">
 										{!! NoCaptcha::display() !!}
 									</div>
-									<button type="submit" class="btn btn-news">Submit</button>
+									<button type="submit" class="btn btn-news">Kirim</button>
 								</form>
 							</div>
 						</div>
@@ -67,7 +67,7 @@
 				<div class="theiaStickySidebar">
 					<div class="panel_inner">
 						<div class="panel_header">
-							<h4><strong>Contact</strong> Info</h4>
+							<h4><strong>Info</strong> Kontak</h4>
 						</div>
 						<div class="panel_body">
 							<address>
