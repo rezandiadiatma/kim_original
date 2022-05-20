@@ -1,54 +1,59 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{{ str_replace('_', '-', app()->getLocale()) }}" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="robots" content="index, follow" />
-    <meta name="generator" content="{{ config('app.version') }}" />
-    <meta name="author" content="{{ getSetting('web_author') }}" />
+	<meta name="generator" content="{{ config('app.version') }}" />
+	<meta name="author" content="{{ getSetting('web_author') }}" />
 	<meta name="csrf-token" content="{{ csrf_token() }}" />
 
 	{!! SEO::generate() !!}
 
 	<link rel="shortcut icon" type="image/x-icon" href="{{ asset('po-content/uploads/'.getSetting('favicon')) }}" />
-	<link href="{{ asset('po-content/frontend/inews/css/jquery-ui.min.css') }}" rel="stylesheet" type="text/css"/>
-	<link href="{{ asset('po-content/frontend/inews/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css"/>
-	<link href="{{ asset('po-content/frontend/inews/css/animate.min.css') }}" rel="stylesheet" type="text/css"/>
-	<link href="{{ asset('po-content/frontend/inews/bootsnav/css/bootsnav.css') }}" rel="stylesheet" type="text/css"/>
-	<link href="{{ asset('po-content/frontend/inews/css/RYPP.css') }}" rel="stylesheet" type="text/css"/>
-	<link href="{{ asset('po-content/frontend/inews/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css"/>
-	<link href="{{ asset('po-content/frontend/inews/themify-icons/themify-icons.css') }}" rel="stylesheet" type="text/css"/>
-	<link href="{{ asset('po-content/frontend/inews/weather-icons/css/weather-icons.min.css') }}" rel="stylesheet" type="text/css"/>
-	<link href="{{ asset('po-content/frontend/inews/css/flaticon.css') }}" rel="stylesheet" type="text/css"/>
-	<link href="{{ asset('po-content/frontend/inews/owl-carousel/owl.carousel.css') }}" rel="stylesheet" type="text/css"/>
-	<link href="{{ asset('po-content/frontend/inews/owl-carousel/owl.theme.css') }}" rel="stylesheet" type="text/css"/>
-	<link href="{{ asset('po-content/frontend/inews/owl-carousel/owl.transitions.css') }}" rel="stylesheet" type="text/css"/>
-	<link href="{{ asset('po-content/frontend/inews/css/style.css') }}" rel="stylesheet" type="text/css"/>
+	<link href="{{ asset('po-content/frontend/inews/css/jquery-ui.min.css') }}" rel="stylesheet" type="text/css" />
+	<link href="{{ asset('po-content/frontend/inews/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+	<link href="{{ asset('po-content/frontend/inews/css/animate.min.css') }}" rel="stylesheet" type="text/css" />
+	<link href="{{ asset('po-content/frontend/inews/bootsnav/css/bootsnav.css') }}" rel="stylesheet" type="text/css" />
+	<link href="{{ asset('po-content/frontend/inews/css/RYPP.css') }}" rel="stylesheet" type="text/css" />
+	<link href="{{ asset('po-content/frontend/inews/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css" />
+	<link href="{{ asset('po-content/frontend/inews/themify-icons/themify-icons.css') }}" rel="stylesheet" type="text/css" />
+	<link href="{{ asset('po-content/frontend/inews/weather-icons/css/weather-icons.min.css') }}" rel="stylesheet" type="text/css" />
+	<link href="{{ asset('po-content/frontend/inews/css/flaticon.css') }}" rel="stylesheet" type="text/css" />
+	<link href="{{ asset('po-content/frontend/inews/owl-carousel/owl.carousel.css') }}" rel="stylesheet" type="text/css" />
+	<link href="{{ asset('po-content/frontend/inews/owl-carousel/owl.theme.css') }}" rel="stylesheet" type="text/css" />
+	<link href="{{ asset('po-content/frontend/inews/owl-carousel/owl.transitions.css') }}" rel="stylesheet" type="text/css" />
+	<link href="{{ asset('po-content/frontend/inews/css/style.css') }}" rel="stylesheet" type="text/css" />
 
 	@stack('styles')
 
 	<script>
 		window.Laravel = <?php echo json_encode([
-			'csrfToken' => csrf_token(),
-		]); ?>
+								'csrfToken' => csrf_token(),
+							]); ?>
 	</script>
 
 	{!! NoCaptcha::renderJs() !!}
 
 	@if(getSetting('google_analytics_id') != '')
-		<script type="text/javascript">
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', "{{ getSetting('google_analytics_id') }}"]);
-			_gaq.push(['_trackPageview']);
-			(function() {
-				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-		</script>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', "{{ getSetting('google_analytics_id') }}"]);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
 	@endif
 </head>
+
 <body>
 	<header>
 		<div class="header-top">
@@ -74,10 +79,11 @@
 						<div class="header-right-menu">
 							<ul>
 								<li>
-                                    @if(getSetting('member_registration') == 'Y')
-                                    <a href="{{ url('register') }}"><i class="fa fa-lock"></i> Sign Up</a> or
-                                    @endif
-                                    <a href="{{ url('login') }}"> Login</a></li>
+									@if(getSetting('member_registration') == 'Y')
+									<a href="{{ url('register') }}"><i class="fa fa-lock"></i> Daftar</a> atau
+									@endif
+									<a href="{{ url('login') }}"> Login</a>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -144,7 +150,7 @@
 			<div class="row">
 				<div class="col-sm-4 footer-box">
 					<div class="about-inner">
-						<img src="{{ asset('po-content/uploads/'.getSetting('logo_footer')) }}" class="img-responsive" alt=""/>
+						<img src="{{ asset('po-content/uploads/'.getSetting('logo_footer')) }}" class="img-responsive" alt="" />
 						<p>{{ \Str::limit(strip_tags(getPages(1)->content), 200) }}</p>
 						<ul>
 							<li><i class="ti-location-arrow"></i>{{ getSetting('address') }}</li>
@@ -166,40 +172,40 @@
 				</div>
 
 				<div class="col-sm-2 footer-box">
-					<h3 class="wiget-title">Category</h3>
+					<h3 class="wiget-title">Kategori</h3>
 					<ul class="menu-services">
 						@foreach(getCategory(7) as $category)
-							<li><a href="{{ url('category/'.$category->seotitle) }}">{{ $category->title }} ({{ $category->posts_count }})</a></li>
+						<li><a href="{{ url('category/'.$category->seotitle) }}">{{ $category->title }} ({{ $category->posts_count }})</a></li>
 						@endforeach
 					</ul>
 				</div>
 
 				<div class="col-sm-4 footer-box">
-					<h3 class="wiget-title">Recent Post</h3>
+					<h3 class="wiget-title">Post Terkini</h3>
 					<div class="footer-news-grid">
 						@foreach(latestPost(2) as $latestpost)
-							<div class="news-list-item">
-								<div class="img-wrapper">
-									<a href="{{ prettyUrl($latestpost) }}" class="thumb">
-										<img src="{{ getPicture($latestpost->picture, 'thumb', $latestpost->updated_by) }}" alt="" class="img-responsive">
-										@if($latestpost->type == 'picture')
-											<div class="link-icon">
-												<i class="fa fa-image"></i>
-											</div>
-										@elseif($latestpost->type == 'video')
-											<div class="link-icon">
-												<i class="fa fa-camera"></i>
-											</div>
-										@endif
-									</a>
-								</div>
-								<div class="post-info-2">
-									<h5><a href="{{ prettyUrl($latestpost) }}" class="title">{{ $latestpost->title }}</a></h5>
-									<ul class="authar-info">
-										<li><i class="ti-timer"></i> {{ date('d F Y', strtotime($latestpost->created_at)) }}</li>
-									</ul>
-								</div>
+						<div class="news-list-item">
+							<div class="img-wrapper">
+								<a href="{{ prettyUrl($latestpost) }}" class="thumb">
+									<img src="{{ getPicture($latestpost->picture, 'thumb', $latestpost->updated_by) }}" alt="" class="img-responsive">
+									@if($latestpost->type == 'picture')
+									<div class="link-icon">
+										<i class="fa fa-image"></i>
+									</div>
+									@elseif($latestpost->type == 'video')
+									<div class="link-icon">
+										<i class="fa fa-camera"></i>
+									</div>
+									@endif
+								</a>
 							</div>
+							<div class="post-info-2">
+								<h5><a href="{{ prettyUrl($latestpost) }}" class="title">{{ $latestpost->title }}</a></h5>
+								<ul class="authar-info">
+									<li><i class="ti-timer"></i> {{ date('d F Y', strtotime($latestpost->created_at)) }}</li>
+								</ul>
+							</div>
+						</div>
 						@endforeach
 					</div>
 				</div>
@@ -237,4 +243,5 @@
 
 	@stack('scripts')
 </body>
+
 </html>
