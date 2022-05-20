@@ -3,7 +3,11 @@
 @section('content')
 <div class="container">
 	<div class="newstricker_inner">
+<<<<<<< HEAD
 		<div class="trending"><strong>Post</strong> Terkini</div>	
+=======
+		<div class="trending"><strong>Berita</strong> Terbaru</div>
+>>>>>>> de9a385ef8729609c4c816fbfa10a9174d4ab6de
 		<div id="NewsTicker" class="owl-carousel owl-theme">
 			@foreach(trendingPost(5) as $trendingPost)
 			<div class="item">
@@ -17,7 +21,7 @@
 <section class="slider-inner">
 	<div class="container">
 		<div class="row thm-margin">
-			<div class="col-xs-12 col-sm-8 col-md-8 thm-padding">
+			<div class="thm-padding">
 				<div class="slider-wrapper">
 					<div id="owl-slider" class="owl-carousel owl-theme">
 						@foreach(headlinePost(3, 0) as $headlinePost)
@@ -39,7 +43,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-12 col-sm-4 col-md-4 thm-padding">
+			<!-- <div class="col-xs-12 col-sm-4 col-md-4 thm-padding">
 				<div class="row slider-right-post thm-margin">
 					@foreach(headlinePost(2, 3) as $headlinePost2)
 					<div class="col-xs-6 col-sm-12 col-md-12 thm-padding">
@@ -58,7 +62,7 @@
 					</div>
 					@endforeach
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </section>

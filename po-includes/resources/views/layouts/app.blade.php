@@ -8,9 +8,9 @@
     <meta name="generator" content="{{ config('app.version') }}" />
     <meta name="author" content="KIM" />
 	<meta name="csrf-token" content="{{ csrf_token() }}">
-	
-	<title>@yield('title') - {{ config('app.name') }}</title>
-	
+
+	<title>@yield('title') - {{ ('KIM') }}</title>
+
 	<link rel="shortcut icon" type="image/x-icon" href="{{ asset('po-content/uploads/'.getSetting('favicon')) }}">
 	<link href="{{ asset('po-admin/lib/@fortawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
 	<link href="{{ asset('po-admin/lib/ionicons/css/ionicons.min.css') }}" rel="stylesheet">
@@ -20,11 +20,11 @@
 	<link href="{{ asset('po-admin/lib/sweetalert/sweetalert2.min.css') }}" rel="stylesheet">
 	<link href="{{ asset('po-admin/lib/nestable/jquery.nestable.css') }}" rel="stylesheet">
 	<link href="{{ asset('po-content/filemanager/fancybox/jquery.fancybox.css') }}" rel="stylesheet">
-	
+
 	@stack('styles')
-	
+
 	<link href="{{ asset('po-admin/assets/css/dashforge.css') }}" rel="stylesheet">
-	
+
 	<script>
 		window.Laravel = <?php echo json_encode([
 			'csrfToken' => csrf_token(),
@@ -44,21 +44,21 @@
 			<ul class="nav nav-aside">
 				<li class="nav-label">{{ __('general.dashboard') }}</li>
 				<li class="nav-item"><a href="{{ url('/dashboard') }}" class="nav-link"><i data-feather="tv"></i> <span>{{ __('general.dashboard') }}</span></a></li>
-				<li class="nav-label mg-t-25">{{ __('general.content') }}</li>
-				<li class="nav-item"><a href="{{ url('/dashboard/posts/table') }}" class="nav-link"><i data-feather="book-open"></i> <span>{{ __('general.posts') }}</span></a></li>
-				<li class="nav-item"><a href="{{ url('/dashboard/categories/table') }}" class="nav-link"><i data-feather="folder-plus"></i> <span>{{ __('general.categories') }}</span></a></li>
+				<li class="nav-label mg-t-25">{{ __('Konten') }}</li>
+				<li class="nav-item"><a href="{{ url('/dashboard/posts/table') }}" class="nav-link"><i data-feather="book-open"></i> <span>{{ __('Pos') }}</span></a></li>
+				<li class="nav-item"><a href="{{ url('/dashboard/categories/table') }}" class="nav-link"><i data-feather="folder-plus"></i> <span>{{ __('Kategori') }}</span></a></li>
 				<li class="nav-item"><a href="{{ url('/dashboard/tags/table') }}" class="nav-link"><i data-feather="bookmark"></i> <span>{{ __('general.tags') }}</span></a></li>
-				<li class="nav-item"><a href="{{ url('/dashboard/comments/table') }}" class="nav-link"><i data-feather="message-square"></i> <span>{{ __('general.comments') }}</span></a></li>
-				<li class="nav-item"><a href="{{ url('/dashboard/pages/table') }}" class="nav-link"><i data-feather="file-text"></i> <span>{{ __('general.pages') }}</span></a></li>
-				<li class="nav-label mg-t-25">{{ __('general.appearance') }}</li>
-				<li class="nav-item"><a href="{{ url('/dashboard/themes/table') }}" class="nav-link"><i data-feather="aperture"></i> <span>{{ __('general.themes') }}</span></a></li>
-				<li class="nav-item"><a href="{{ url('/dashboard/menu-manager') }}" class="nav-link"><i data-feather="list"></i> <span>{{ __('general.menu_manager') }}</span></a></li>
-				<li class="nav-item"><a href="{{ url('/dashboard/settings') }}" class="nav-link"><i data-feather="settings"></i> <span>{{ __('general.settings') }}</span></a></li>
-				<li class="nav-label mg-t-25">{{ __('general.component') }}</li>
-				<li class="nav-item"><a href="{{ url('/dashboard/components/table') }}" class="nav-link"><i data-feather="package"></i> <span>{{ __('general.components') }}</span></a></li>
-				<li class="nav-item"><a href="{{ url('/dashboard/gallerys/table') }}" class="nav-link"><i data-feather="image"></i> <span>{{ __('general.gallerys') }}</span></a></li>
-				<li class="nav-item"><a href="{{ url('/dashboard/contacts/table') }}" class="nav-link"><i data-feather="mail"></i> <span>{{ __('general.contacts') }}</span></a></li>
-				<!-- <li class="nav-item"><a href="{{ url('/dashboard/clark') }}" class="nav-link"><i data-feather="command"></i> <span>{{ __('general.clark') }}</span></a></li> !-->
+				<li class="nav-item"><a href="{{ url('/dashboard/comments/table') }}" class="nav-link"><i data-feather="message-square"></i> <span>{{ __('komentar') }}</span></a></li>
+				<li class="nav-item"><a href="{{ url('/dashboard/pages/table') }}" class="nav-link"><i data-feather="file-text"></i> <span>{{ __('Halaman') }}</span></a></li>
+				<li class="nav-label mg-t-25">{{ __('Tampilan') }}</li>
+				<li class="nav-item"><a href="{{ url('/dashboard/themes/table') }}" class="nav-link"><i data-feather="aperture"></i> <span>{{ __('Tema') }}</span></a></li>
+				<li class="nav-item"><a href="{{ url('/dashboard/menu-manager') }}" class="nav-link"><i data-feather="list"></i> <span>{{ __('Menu') }}</span></a></li>
+				<li class="nav-item"><a href="{{ url('/dashboard/settings') }}" class="nav-link"><i data-feather="settings"></i> <span>{{ __('Pengaturan') }}</span></a></li>
+				<li class="nav-label mg-t-25">{{ __('Komponen') }}</li>
+				<!-- <li class="nav-item"><a href="{{ url('/dashboard/components/table') }}" class="nav-link"><i data-feather="package"></i> <span>{{ __('List') }}</span></a></li> -->
+				<li class="nav-item"><a href="{{ url('/dashboard/gallerys/table') }}" class="nav-link"><i data-feather="image"></i> <span>{{ __('Galeri') }}</span></a></li>
+				<li class="nav-item"><a href="{{ url('/dashboard/contacts/table') }}" class="nav-link"><i data-feather="mail"></i> <span>{{ __('kontak') }}</span></a></li>
+				<!-- <li class="nav-item"><a href="{{ url('/dashboard/clark') }}" class="nav-link"><i data-feather="command"></i> <span>{{ __('general.clark') }}</span></a></li> ! -->
 				<li class="nav-label mg-t-25">{{ __('general.user') }}</li>
 				<li class="nav-item"><a href="{{ url('/dashboard/users/table') }}" class="nav-link"><i data-feather="users"></i> <span>{{ __('general.users') }}</span></a></li>
 				<li class="nav-item"><a href="{{ url('/dashboard/roles/table') }}" class="nav-link"><i data-feather="life-buoy"></i> <span>{{ __('general.roles') }}</span></a></li>
@@ -66,19 +66,19 @@
 			</ul>
 		</div>
     </aside>
-	
+
 	<div class="content ht-100v pd-0">
 		<div class="content-header">
 			<div class="content-search">
 				<i data-feather="search"></i>
 				<input type="search" class="form-control data-search" placeholder="{{ __('general.search') }}...">
 			</div>
-			
+
 			<div class="row">
 				<nav class="nav mt-2 mr-4 d-none d-sm-block">
 					<a href="{{ url('/') }}" class="nav-link" target="_blank" data-toggle="tooltip" data-placement="left" title="{{ __('general.view_front_page') }}"><i data-feather="home"></i></a>
 				</nav>
-				
+
 				<div class="navbar-right pr-3">
 					<div class="dropdown dropdown-profile">
 						<a href="#" class="dropdown-link" data-toggle="dropdown" data-display="static">
@@ -92,7 +92,7 @@
 								@endif
 							@endif
 						</a>
-						
+
 						<div class="dropdown-menu dropdown-menu-right tx-13">
 							<h6 class="tx-semibold mg-b-5">{{ Auth::user()->name }}</h6>
 							<p class="mg-b-25 tx-12 tx-color-03">{{ Auth::user()->email }}</p>
@@ -101,8 +101,8 @@
 								<a href="{{ url('/dashboard/settings') }}" class="dropdown-item"><i data-feather="settings"></i> {{ __('general.settings') }}</a>
 							@endif
 							<div class="dropdown-divider"></div>
-							<a href="http://www.popojicms.org/contact" class="dropdown-item" target="_blank"><i data-feather="help-circle"></i> {{ __('general.help') }}</a>
-							<a href="https://www.facebook.com/popojicms/?ref=bookmarks" class="dropdown-item" target="_blank"><i data-feather="life-buoy"></i> {{ __('general.forum') }}</a>
+							<!-- <a href="http://www.popojicms.org/contact" class="dropdown-item" target="_blank"><i data-feather="help-circle"></i> {{ __('general.help') }}</a> -->
+							<!-- <a href="https://www.facebook.com/popojicms/?ref=bookmarks" class="dropdown-item" target="_blank"><i data-feather="life-buoy"></i> {{ __('general.forum') }}</a> -->
 							<a href="javascript:void(0);" class="dropdown-item" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i data-feather="log-out"></i> {{ __('general.sign_out') }}</a>
 							<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
 								@csrf
@@ -112,7 +112,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="content-body">
 			<div class="container">
 				@if (Session::has('flash_message'))
@@ -130,12 +130,12 @@
 						</div>
 					</div>
 				@endif
-				
+
 				@yield('content')
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="modal alertalldel" id="alertalldel" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog modal-md modal-dialog-centered" role="document">
 			<div class="modal-content">
@@ -153,7 +153,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	@yield('modal')
 
 	<script src="{{ asset('po-admin/lib/jquery/jquery.min.js') }}"></script>
@@ -170,9 +170,9 @@
 	<script src="{{ asset('po-content/filemanager/fancybox/jquery.fancybox.js') }}"></script>
 	<script src="{{ asset('po-admin/assets/js/dashforge.aside.js') }}"></script>
 	<script src="{{ asset('po-admin/lib/js-cookie/js.cookie.js') }}"></script>
-	
+
 	@stack('scripts')
-	
+
 	<script src="{{ asset('po-admin/assets/js/dashforge.js') }}"></script>
 	<script src="{{ asset('po-admin/assets/js/popoji-main.js') }}"></script>
 </body>
