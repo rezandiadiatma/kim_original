@@ -3,11 +3,11 @@
 @section('content')
 <div class="container">
 	<div class="newstricker_inner">
-<<<<<<< HEAD
-		<div class="trending"><strong>Post</strong> Terkini</div>	
-=======
-		<div class="trending"><strong>Berita</strong> Terbaru</div>
->>>>>>> de9a385ef8729609c4c816fbfa10a9174d4ab6de
+		<div class="trending"><strong>Berita</strong> Terbaru
+		</div>
+
+
+
 		<div id="NewsTicker" class="owl-carousel owl-theme">
 			@foreach(trendingPost(5) as $trendingPost)
 			<div class="item">
@@ -17,6 +17,7 @@
 		</div>
 	</div>
 </div>
+
 
 <section class="slider-inner">
 	<div class="container">
@@ -66,6 +67,7 @@
 		</div>
 	</div>
 </section>
+
 <div class="container">
 	<div class="row">
 		<div class="col-sm-12">
@@ -87,6 +89,7 @@
 		</div>
 	</div>
 </div>
+
 <div class="container">
 	<div class="row row-m">
 		<div class="col-sm-8 col-p main-content">
@@ -181,6 +184,8 @@
 						@endforeach
 					</div>
 
+
+
 					<div class="post-footer">
 						<div class="row thm-margin">
 							<div class="col-md-12 thm-padding">
@@ -188,12 +193,31 @@
 							</div>
 						</div>
 					</div>
+
 				</div>
 			</div>
 		</div>
 
 		<div class="col-sm-4 col-p rightSidebar">
 			@include(getTheme('partials.sidebar'))
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="featured-inner">
+				<div id="link-terkait" class="owl-carousel2">
+
+						<center><div class="add-inner">
+									<a href=""><img src="{{ asset('po-content/frontend/inews/images/laporhendi.png') }}" alt="" width="230" height="200"></a>
+									<a href=""><img src="{{ asset('po-content/frontend/inews/images/laporhendi.png') }}"  alt="" width="230" height="200"></a>
+									<a href=""><img src="{{ asset('po-content/frontend/inews/images/laporhendi.png') }}"  alt="" width="230" height="200"></a>
+									<a href=""><img src="{{ asset('po-content/frontend/inews/images/laporhendi.png') }}"  alt="" width="230" height="200"></a>
+							</div></center>
+
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
