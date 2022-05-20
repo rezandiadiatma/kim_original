@@ -210,10 +210,10 @@
 				<div id="link-terkait" class="owl-carousel2">
 
 						<center><div class="add-inner">
-									<a href=""><img src="{{ asset('po-content/frontend/inews/images/laporhendi.png') }}" alt="" width="230" height="200"></a>
-									<a href=""><img src="{{ asset('po-content/frontend/inews/images/laporhendi.png') }}"  alt="" width="230" height="200"></a>
-									<a href=""><img src="{{ asset('po-content/frontend/inews/images/laporhendi.png') }}"  alt="" width="230" height="200"></a>
-									<a href=""><img src="{{ asset('po-content/frontend/inews/images/laporhendi.png') }}"  alt="" width="230" height="200"></a>
+									<a href=""><img src="{{ asset('po-content/frontend/inews/images/laporhendi.png') }}" alt="#" width="230" height="200"></a>
+									<a href=""><img src="{{ asset('po-content/frontend/inews/images/laporhendi.png') }}"  alt="#" width="230" height="200"></a>
+									<a href=""><img src="{{ asset('po-content/frontend/inews/images/laporhendi.png') }}"  alt="#" width="230" height="200"></a>
+									<a href=""><img src="{{ asset('po-content/frontend/inews/images/laporhendi.png') }}"  alt="#" width="230" height="200"></a>
 							</div></center>
 
 				</div>
