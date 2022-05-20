@@ -22,7 +22,7 @@
 			<span class="tx-color-04"><i data-feather="home" class="wd-60 ht-60"></i></span>
 			<div class="media-body mg-l-20">
 				<h6 class="mg-b-10 text-uppercase">{{ __('Hallo, Selamat Datang') }}</h6>
-				<p class="tx-color-03 mg-b-0">{{ __('Selamat datang di administrator') }} {{ config('app.name') }}. {{ __('dashboard.please_click') }}</p>
+				<p class="tx-color-03 mg-b-0">{{ __('Selamat datang di administrator') }} {{ ('Kelompok Informasi Masyarakat') }} </p>
 			</div>
 		</div>
 	</div>
@@ -194,7 +194,7 @@
 
 	<div class="row">
 		<div class="col-md-12 text-center">
-			<p class="tx-color-03 tx-13">{{ getSetting('web_name') }} By {{ getSetting('web_author') }}.<br />&copy; Copyright 2013 - {{ date('Y') }}. Build with POPOJI your Engine Management System.</p>
+			<p class="tx-color-03 tx-13">{{ getSetting('web_name') }}{{ (' ( Kelompok Informasi Masyarakat )') }} - {{ ('Diskominfo Kota Semarang') }}. &copy; Copyright 2022 </p>
 		</div>
 	</div>
 @endsection
