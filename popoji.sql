@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 20, 2022 at 09:44 AM
+-- Generation Time: May 20, 2022 at 09:52 AM
 -- Server version: 10.3.15-MariaDB
 -- PHP Version: 7.3.6
 
@@ -383,11 +383,11 @@ CREATE TABLE `categories` (
 
 INSERT INTO `categories` (`id`, `parent`, `title`, `seotitle`, `picture`, `active`, `created_by`, `updated_by`, `created_at`, `updated_at`) VALUES
 (1, 0, 'Kegiatan KIM', 'kegiatan-kim', NULL, 'Y', 1, 1, '2019-10-08 21:09:54', '2022-05-19 18:29:41'),
-(2, 0, 'Wisata', 'wisata', NULL, 'Y', 1, 1, '2019-10-08 21:11:36', '2022-05-19 18:30:18'),
-(3, 0, 'Kuliner', 'kuliner', NULL, 'Y', 1, 1, '2019-10-08 21:12:03', '2022-05-19 18:30:11'),
+(2, 0, 'Kegiatan FIM', 'kegiatan-fim', NULL, 'Y', 1, 1, '2022-05-19 00:42:20', '2022-05-19 18:29:46'),
+(3, 0, 'Informasi Penting', 'informasi-penting', NULL, 'Y', 1, 1, '2019-10-08 21:12:30', '2022-05-19 18:29:58'),
 (4, 0, 'Peluang', 'peluang', NULL, 'Y', 1, 1, '2019-10-08 21:12:09', '2022-05-19 18:30:05'),
-(5, 0, 'Informasi Penting', 'informasi-penting', NULL, 'Y', 1, 1, '2019-10-08 21:12:30', '2022-05-19 18:29:58'),
-(8, 0, 'Kegiatan FIM', 'kegiatan-fim', NULL, 'Y', 1, 1, '2022-05-19 00:42:20', '2022-05-19 18:29:46');
+(5, 0, 'Kuliner', 'kuliner', NULL, 'Y', 1, 1, '2019-10-08 21:12:03', '2022-05-19 18:30:11'),
+(8, 0, 'Wisata', 'wisata', NULL, 'Y', 1, 1, '2019-10-08 21:11:36', '2022-05-19 18:30:18');
 
 -- --------------------------------------------------------
 
@@ -409,15 +409,6 @@ CREATE TABLE `comments` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `comments`
---
-
-INSERT INTO `comments` (`id`, `parent`, `post_id`, `name`, `email`, `content`, `active`, `status`, `created_by`, `updated_by`, `created_at`, `updated_at`) VALUES
-(1, 0, 1, 'Dwira Survivor', 'djenuar@yahoo.co.id', 'Mungkin saja melihat MU masih ragu-ragu untuk mengganti pelatih yang sekarang.', 'Y', 'Y', 2, 2, '2019-10-16 16:00:00', '2019-10-16 21:57:07'),
-(2, 1, 1, 'Super Admin', 'super@popojicms.org', 'Kita lihat saja perkembangannya nanti. Terima kasih sudah mengomentari berita ini.', 'Y', 'Y', 2, 2, '2019-10-16 21:56:02', '2019-10-16 21:56:02'),
-(3, 0, 5, 'Jenuar Dalapang', 'djenuar@gmail.com', 'Ujung Indonesia itu indah-indah yaa ternyata...menajubkan sekali.', 'Y', 'Y', 1, 1, '2019-11-12 20:14:45', '2019-11-12 20:18:13');
 
 -- --------------------------------------------------------
 
@@ -1351,7 +1342,7 @@ ALTER TABLE `albums`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `comments`
