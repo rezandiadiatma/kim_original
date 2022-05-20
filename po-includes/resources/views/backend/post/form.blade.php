@@ -33,7 +33,7 @@
 			{!! $errors->first('meta_description', '<p class="help-block">:message</p>') !!}
 		</div>
 		<div class="form-group">
-			{!! Form::label('tag', __('post.tag'), ['class' => 'control-label']) !!}
+			{!! Form::label('tag', __('Tag (Berita | Aktivitas)'), ['class' => 'control-label']) !!}
 			{!! Form::text('tag', null, ['class' => $errors->has('tag') ? 'form-control is-invalid' : 'form-control']) !!}
 			{!! $errors->first('tag', '<p class="help-block">:message</p>') !!}
 		</div>
@@ -111,7 +111,7 @@
 				<div class="divider-text">{{ __('post.picture_gallery') }}</div>
 			</div>
 		@endif
-		
+
 		@foreach($post_gallerys as $post_gallery)
 			<div class="col-md-4" id="box-item-gallery-{{ Hashids::encode($post_gallery->id) }}">
 				<figure class="pos-relative mg-b-10">
@@ -128,7 +128,7 @@
 			</div>
 		@endforeach
 	</div>
-	
+
 	<div class="row">
 		<div class="col-md-12 text-center">
 			<div class="divider-text">{{ __('post.add_picture_gallery') }}</div>
