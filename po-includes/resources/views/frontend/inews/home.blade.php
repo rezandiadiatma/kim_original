@@ -3,8 +3,7 @@
 @section('content')
 <div class="container">
 	<div class="newstricker_inner">
-		<div class="trending"><strong>Post</strong> Terkini</div>
-		<div id="NewsTicker" class="owl-carde9a385ef8729609c4c816fbfa10a9174d4ab6deousel owl-theme">
+		
 		<div class="trending"><strong>Berita</strong> Terbaru
 		</div>
 		<div id="NewsTicker" class="owl-carousel owl-theme">
