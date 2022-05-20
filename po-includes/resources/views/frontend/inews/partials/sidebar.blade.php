@@ -1,6 +1,6 @@
 <div class="theiaStickySidebar">
 	<div class="add-inner">
-		<img src="{{ asset('po-content/frontend/inews/images/add320x270-1.jpg') }}" class="img-responsive" alt="">
+		<img src="{{ asset('po-content/frontend/inews/images/majukankelompokmasyarakat.png') }}" class="img-responsive" alt="">
 	</div>
 	
 	<div class="tabs-wrapper">

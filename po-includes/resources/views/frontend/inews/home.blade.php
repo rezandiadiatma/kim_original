@@ -3,12 +3,8 @@
 @section('content')
 <div class="container">
 	<div class="newstricker_inner">
-<<<<<<< HEAD
-		<div class="trending"><strong>Post</strong> Terkini</div>	
-=======
-		<div class="trending"><strong>Berita</strong> Terbaru</div>
->>>>>>> de9a385ef8729609c4c816fbfa10a9174d4ab6de
-		<div id="NewsTicker" class="owl-carousel owl-theme">
+		<div class="trending"><strong>Post</strong> Terkini</div>
+		<div id="NewsTicker" class="owl-carde9a385ef8729609c4c816fbfa10a9174d4ab6deousel owl-theme">
 			@foreach(trendingPost(5) as $trendingPost)
 			<div class="item">
 				<a href="{{ prettyUrl($trendingPost) }}">{{ $trendingPost->title }}</a>

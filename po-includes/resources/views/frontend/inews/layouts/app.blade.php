@@ -95,7 +95,7 @@
 					</div>
 
 					<div class="col-sm-8">
-						<a href="{{ url('/') }}"><img src="{{ asset('po-content/frontend/inews/images/add728x90-1.jpg') }}" class="img-responsive" alt=""></a>
+						<a href="{{ url('/') }}"><img src="{{ asset('po-content/frontend/inews/images/kotasemarang.png') }}" class="img-responsive" alt=""></a>
 					</div>
 				</div>
 			</div>
