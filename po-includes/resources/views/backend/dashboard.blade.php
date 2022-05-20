@@ -194,7 +194,7 @@
 
 	<div class="row">
 		<div class="col-md-12 text-center">
-			<p class="tx-color-03 tx-13">{{ getSetting('web_name') }} By {{ getSetting('web_author') }}.<br />&copy; Copyright 2013 - {{ date('Y') }}. Build with POPOJI your Engine Management System.</p>
+			<p class="tx-color-03 tx-13">{{ getSetting('web_name') }} By {{ getSetting('web_author') }}.<br />&copy; Copyright 2013 - {{ date('Y') }}. Build with Care your Engine Management System.</p>
 		</div>
 	</div>
 @endsection

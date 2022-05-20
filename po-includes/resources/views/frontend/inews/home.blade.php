@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
 	<div class="newstricker_inner">
-		<div class="trending"><strong>Postingan</strong> Terkini</div>
+		<div class="trending"><strong>Post</strong> Terkini</div>	
 		<div id="NewsTicker" class="owl-carousel owl-theme">
 			@foreach(trendingPost(5) as $trendingPost)
 			<div class="item">
