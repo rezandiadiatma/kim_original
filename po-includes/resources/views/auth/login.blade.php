@@ -46,8 +46,8 @@
 							</div>
 							<button class="btn btn-brand-02 btn-block" type="submit">{{ __('auth.signin') }}</button>
 						</form>
-						<div class="divider-text">{{ __('auth.or') }}</div>
-						<div class="tx-13 mg-t-20 tx-center">{{ __('auth.dont_have') }} <a href="{{ url('register') }}">{{ __('auth.create_account') }}</a></div>
+						<!--<div class="divider-text">{{ __('auth.or') }}</div>-->
+						<!--<div class="tx-13 mg-t-20 tx-center">{{ __('auth.dont_have') }} <a href="{{ url('register') }}">{{ __('auth.create_account') }}</a></div>-->
 					</div>
 				</div>
 			</div>
