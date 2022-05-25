@@ -48,7 +48,7 @@
 				<li class="nav-item"><a href="{{ url('/dashboard/posts/table') }}" class="nav-link"><i data-feather="book-open"></i> <span>{{ __('Pos') }}</span></a></li>
 				<li class="nav-item"><a href="{{ url('/dashboard/categories/table') }}" class="nav-link"><i data-feather="folder-plus"></i> <span>{{ __('Kategori') }}</span></a></li>
 				<li class="nav-item"><a href="{{ url('/dashboard/tags/table') }}" class="nav-link"><i data-feather="bookmark"></i> <span>{{ __('general.tags') }}</span></a></li>
-				<li class="nav-item"><a href="{{ url('/dashboard/comments/table') }}" class="nav-link"><i data-feather="message-square"></i> <span>{{ __('komentar') }}</span></a></li>
+				<li class="nav-item"><a href="{{ url('/dashboard/comments/table') }}" class="nav-link"><i data-feather="message-square"></i> <span>{{ __('Komentar') }}</span></a></li>
 				<li class="nav-item"><a href="{{ url('/dashboard/pages/table') }}" class="nav-link"><i data-feather="file-text"></i> <span>{{ __('Halaman') }}</span></a></li>
 				<li class="nav-label mg-t-25">{{ __('Tampilan') }}</li>
 				<li class="nav-item"><a href="{{ url('/dashboard/themes/table') }}" class="nav-link"><i data-feather="aperture"></i> <span>{{ __('Tema') }}</span></a></li>
@@ -57,7 +57,7 @@
 				<li class="nav-label mg-t-25">{{ __('Komponen') }}</li>
 				<!-- <li class="nav-item"><a href="{{ url('/dashboard/components/table') }}" class="nav-link"><i data-feather="package"></i> <span>{{ __('List') }}</span></a></li> -->
 				<li class="nav-item"><a href="{{ url('/dashboard/gallerys/table') }}" class="nav-link"><i data-feather="image"></i> <span>{{ __('Galeri') }}</span></a></li>
-				<li class="nav-item"><a href="{{ url('/dashboard/contacts/table') }}" class="nav-link"><i data-feather="mail"></i> <span>{{ __('kontak') }}</span></a></li>
+				<li class="nav-item"><a href="{{ url('/dashboard/contacts/table') }}" class="nav-link"><i data-feather="mail"></i> <span>{{ __('Kontak') }}</span></a></li>
 				<!-- <li class="nav-item"><a href="{{ url('/dashboard/clark') }}" class="nav-link"><i data-feather="command"></i> <span>{{ __('general.clark') }}</span></a></li> ! -->
 				<li class="nav-label mg-t-25">{{ __('general.user') }}</li>
 				<li class="nav-item"><a href="{{ url('/dashboard/users/table') }}" class="nav-link"><i data-feather="users"></i> <span>{{ __('general.users') }}</span></a></li>

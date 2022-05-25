@@ -1,6 +1,13 @@
 @extends(getTheme('layouts.app'))
 
 @section('content')
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-229536223-3');
+</script>
 	<div class="page-title">&nbsp;</div>
 	
 	<div class="container">

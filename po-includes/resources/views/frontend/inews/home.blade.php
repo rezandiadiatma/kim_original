@@ -1,5 +1,13 @@
 @extends(getTheme('layouts.app'))
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-229536223-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-229536223-3');
+</script>
 @section('content')
 <div class="container">
 	<div class="newstricker_inner">
@@ -206,14 +214,16 @@
 		<div class="col-sm-12">
 			<div class="featured-inner">
 				<div id="link-terkait" class="owl-carousel2">
-
+				    <center>
+				    <h5 style="">LINK TERKAIT :</h5></center>
 						<center><div class="add-inner">
-									<a href=""><img src="{{ asset('po-content/frontend/inews/images/laporhendi.png') }}" alt="#" width="230" height="200"></a>
-									<a href=""><img src="{{ asset('po-content/frontend/inews/images/laporhendi.png') }}"  alt="#" width="230" height="200"></a>
-									<a href=""><img src="{{ asset('po-content/frontend/inews/images/laporhendi.png') }}"  alt="#" width="230" height="200"></a>
-									<a href=""><img src="{{ asset('po-content/frontend/inews/images/laporhendi.png') }}"  alt="#" width="230" height="200"></a>
+						            <a href="https://pip.semarangkota.go.id/"><img src="{{ asset('po-content/frontend/inews/images/logo_pip.png') }}" alt="#" width="80" height="80" style="margin:15px;"></a>
+									<a href="https://www.semarangkota.go.id/"><img src="{{ asset('po-content/frontend/inews/images/logo_pemkotsmg.png') }}" alt="#" width="70" height="80" style="margin:15px;"></a>
+									<a href="#"><img src="{{ asset('po-content/frontend/inews/images/turnbackhoax.png') }}"  alt="#" width="80" height="80"  style="margin:15px;"></a>
+									<a href="#"><img src="{{ asset('po-content/frontend/inews/images/laporhendi.png') }}"  alt="#" width="80" height="80" style="margin:15px;"></a>
+									<a href="https://ppid.semarangkota.go.id/"><img src="{{ asset('po-content/frontend/inews/images/ppid.jpeg') }}"  alt="#" width="130" height="80" style="margin:15px;"></a>
+									<a href="https://data.semarangkota.go.id/"><img src="{{ asset('po-content/frontend/inews/images/logo_semarsatata.png') }}" alt="#" width="80" height="80" style="margin:15px;"></a>
 							</div></center>
-
 				</div>
 			</div>
 		</div>
